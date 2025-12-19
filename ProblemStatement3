@@ -7,42 +7,27 @@
 
     <style>
         body { 
-            margin: 0;
-            height: 100vh;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif; 
+            text-align: center; 
+            padding: 50px;
             background-color: #7564c4;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;       
-        }
-
-        #counter {
-            font-size: 120px;
-            margin-bottom: 30px;
-            color: white;
         }
 
         button { 
             font-size: 20px; 
-            padding: 15px 30px; 
+            padding: 15px; 
             background-color: #28a745;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
-
-        button:hover {
-            background-color: #218838;
-        }
     </style>
 </head>
 <body>
 
-    <div id="counter">0</div>
-    <button onclick="increment()">Click Me!</button>
+    <div id="counter" style="font-size: 120px;">0</div>
+    <button onclick="increment()" >Click Me!</button>
     
     <script>
         let count = 0;
