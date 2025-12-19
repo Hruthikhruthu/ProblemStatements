@@ -1,1 +1,16 @@
+def is_valid(s):
+    new = []
+    pairs = {')': '(', '}': '{', ']': '['}
+    
+    for char in s:
+        if char in pairs:
+            if len(new) == 0 or new.pop() != pairs[char]:
+                return False
+        else:
+            new.append(char)
+    
+    return len(new) == 0
+s = input().strip()
+print("true" if is_valid(s) else "false")
+
 
